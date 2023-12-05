@@ -1,16 +1,18 @@
 name: BMI application workflow
 on:
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'src/**'
-      - '.github/workflows/app-workflow.yaml'
-  push:
-    branches: [ main ]
-    paths:
-      - 'src/**'
-      - '.github/workflows/app-workflow.yaml'
+#  pull_request:
+#    branches: [ main ]
+#    paths:
+#      - 'src/**'
+#      - '.github/workflows/app-workflow.yaml'
+#  push:
+#    branches: [ main ]
+#    paths:
+#      - 'src/**'
+#      - '.github/workflows/app-workflow.yaml'
 
+  workflow_dispatch:
+  
 jobs:
   project-build:
     runs-on: ubuntu-latest
